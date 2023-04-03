@@ -1,14 +1,27 @@
-import "./CartWidget.module.css"
-import {FaShoppingCart} from 'react-icons/fa';
+import "./CartWidget.module.css";
+import { FaCartPlus } from "react-icons/fa";
+import Badge from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
+
+
+
+const StyledBadge = styled(Badge)(({ theme }) => ({
+  "& .MuiBadge-badge": {
+    right: -3,
+    top: 13,
+    border: `2px solid ${theme.palette.background.paper}`,
+    padding: "0 4px",
+  },
+}));
+
 const CartWidget = () => {
   return (
-  
     <div className="carrito">
-     
-     <FaShoppingCart size={45} /><span>0</span>
-     
+      <StyledBadge badgeContent={1} color="error">
+        <FaCartPlus size={45} />
+      </StyledBadge>
     </div>
-  )
-}
+  );
+};
 
-export default CartWidget
+export default CartWidget;

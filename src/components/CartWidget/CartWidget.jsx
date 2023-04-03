@@ -2,7 +2,7 @@ import "./CartWidget.module.css";
 import { FaCartPlus } from "react-icons/fa";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
-
+import styles from "./CartWidget.module.css"
 
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -16,7 +16,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const CartWidget = () => {
   return (
-    <div className="carrito">
+    <div className={styles.carrito}>
       <StyledBadge badgeContent={1} color="error">
         <FaCartPlus size={45} />
       </StyledBadge>

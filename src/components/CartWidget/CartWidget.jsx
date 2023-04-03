@@ -2,8 +2,7 @@ import "./CartWidget.module.css";
 import { FaCartPlus } from "react-icons/fa";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
-import styles from "./CartWidget.module.css"
-
+import styles from "./CartWidget.module.css";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {

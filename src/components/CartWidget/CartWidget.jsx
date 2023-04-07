@@ -1,5 +1,5 @@
 import "./CartWidget.module.css";
-import { FaCartPlus } from "react-icons/fa";
+import { BsCart } from "react-icons/bs";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import styles from "./CartWidget.module.css";
@@ -17,7 +17,7 @@ const CartWidget = () => {
   return (
     <div className={styles.carrito}>
       <StyledBadge badgeContent={1} color="error">
-        <FaCartPlus size={45} />
+        <BsCart size={40} style={{ fill: 'white' }}/>
       </StyledBadge>
     </div>
   );

@@ -7,17 +7,15 @@ export default function BasicTextFields() {
     <Box
       component="form"
       sx={{
-        "& > :not(style)": { m: 5, width: "50ch" },
+        "& > :not(style)": { m: 1, width: "50ch" },
+        backgroundColor: "#f0db71"
       }}
       //noValidate
       autoComplete="off"
     >
       <TextField
-        id="outlined-basic"
-        label="Buscar por Título o Autor"
-        variant="outlined"
-        color="warning"
-      />
+      label="Buscar por Título o Autor" color="error"/> 
+      
     </Box>
   );
 }

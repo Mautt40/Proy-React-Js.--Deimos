@@ -1,9 +1,26 @@
 import styles from "./ItemList.module.css";
-const ItemList = () => {
+const ItemList = ({items}) => {
+ 
+  
   return (
-    <div>
-        <h2> Aca se van a renderizar los productos </h2>
-        </div>
+    <div style={{display:"flex"}}>
+     {
+      items.map ((elemento)=>{
+        return(
+          <div style={{border:"2px solid black",
+          width:"200px",
+          height: "200px"
+          }}>  
+        
+          <h3> {elemento.titulo} </h3>
+          <h4> {elemento.autor} </h4>
+        
+      </div>
+        )
+      })
+     }   
+    
+    </div>
   )
 }
 

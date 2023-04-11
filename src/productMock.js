@@ -21,7 +21,7 @@ export const products = [
     {
             
         id: 3,
-        Título: "IT",
+        titulo: "IT",
         precio: 8.000,
         stock: 7,
         autor: "Stephen King",
@@ -60,7 +60,7 @@ export const products = [
     },
     {
         id: 7,
-        Título: "Hyperion",
+        titulo: "Hyperion",
         precio: 6.500,
         stock: 4,
         autor: "Dan Simmons",

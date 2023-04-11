@@ -8,6 +8,7 @@ const ItemListContainer = () => {
 const [items, setItems] = useState ([])
 
 useEffect (()=>{const tarea = new Promise ((resolve, reject)=> {
+
   resolve (products)
   //reject ("se rechazó")
   
@@ -15,19 +16,11 @@ useEffect (()=>{const tarea = new Promise ((resolve, reject)=> {
   
   tarea
   .then  ((res)=>setItems (res))
-  .catch ((err)=>console.log("catch :", err))}, [])
-
-
-
-
-
-console.log (items)
-
-
+  .catch ((err)=>console.log("catch :", err))}, []);
 
 return (
    <div>
-  <ItemList/>
+  <ItemList items ={items}/>
    </div>
   );
 };

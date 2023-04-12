@@ -11,17 +11,15 @@ const ItemList = ({items}) => {
  
   
   return (
-    <div style={{
-      display:"flex", 
-      flexWrap:"wrap",
-      border: "2px solid black",
-      justifyContent:"space-evenly" }}>
+  
+    <div className={styles.containerItems}>
+   
      {
       items.map ((item)=>{
         return(
-          <Card sx={{Width:350, height :500}}>
+          <Card sx={{minWidth:250,}}>
        <CardMedia
-        sx={{ height:250,marginTop:2,}}
+        sx={{ height:350}}
         image={item.img}
         title={item.titulo} 
       />
@@ -48,6 +46,7 @@ const ItemList = ({items}) => {
      }   
     
     </div>
+
   )
 }
 

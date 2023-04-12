@@ -1,1 +1,12 @@
-
+.containerItems {
+  display:flex ;
+  justify-Content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(86, 30, 30);
+  align-items: center;
+  padding-top: 25px;
+  row-gap: 25px;
+  column-gap: 2px;
+ 
+    }
+    

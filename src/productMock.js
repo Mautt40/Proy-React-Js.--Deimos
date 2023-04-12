@@ -54,7 +54,7 @@ export const products = [
         titulo: "Dune /Saga completa",
         precio: 23.500,
         stock: 2,
-        autor: " Frank Herbert",
+        autor: "Frank Herbert",
         genero: "Ciencia Ficción",
         img: "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188821/Librer%C3%ADa%20Deimos/dune_saga_jbzxaz.jpg"
     },

@@ -17,27 +17,29 @@ const ItemList = ({items}) => {
      {
       items.map ((item)=>{
         return(
-          <Card sx={{minWidth:250,}}>
+          <Card sx={{minWidth:300, margin:.1, }}>
        <CardMedia
-        sx={{ height:350}}
+        
+        sx={{height:350, margin:.2, backgroundSize:"contain" }}
         image={item.img}
         title={item.titulo} 
-      />
+      /> 
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {item.titulo}
         </Typography>
-        <Typography variant="body2" color="error">
+        <Typography variant="h6" color="error">
           {item.autor}
         </Typography>
-        <Typography variant="body2" color="black">
+        <Typography variant="subtitle1" color="black">
           {item.genero}
         </Typography>
       
       </CardContent>
-      <CardActions>
-        <Button  variant= "contained" background ="black" >Ver detalle</Button>
-       
+      <CardActions style={{ justifyContent: 'center', paddingBottom: 16, flexDirection:"column" }}>
+        <Button variant= "contained" id="detalle" color ="warning">Ver detalle</Button>
+        <Button >EDITAR</Button>
+        <Button >BORRAR</Button>
       </CardActions>
     </Card>
       

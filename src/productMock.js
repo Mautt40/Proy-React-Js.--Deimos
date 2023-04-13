@@ -85,6 +85,21 @@ export const products = [
         autor: "Clive Barker",
         genero: "Terror",
         img: "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188803/Librer%C3%ADa%20Deimos/3542515.RS500x500_gb38jx.jpg"
+    },
+    {
+        id: 10,
+        titulo: "Elantris",
+        precio: 7.200,
+        stock: 3,
+        autor: "Brandon Sanderson",
+        genero: "Ciencia Ficción",
+        img: "https://res.cloudinary.com/dybaqgqte/image/upload/v1681346405/Librer%C3%ADa%20Deimos/Elanstris_oupogd.webp"
     }
+
+
+
 ]
+
+
+
     

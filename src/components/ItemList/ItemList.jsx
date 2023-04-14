@@ -17,10 +17,10 @@ const ItemList = ({items}) => {
      {
       items.map ((item)=>{
         return(
-          <Card sx={{minWidth:300, margin:.1, }}>
+          <Card sx={{minWidth:300, margin:.2, backgroundColor: "primary" }}>
        <CardMedia
         
-        sx={{height:350, margin:.2, backgroundSize:"contain" }}
+        sx={{height:250, margin:1, backgroundSize:"contain", }}
         image={item.img}
         title={item.titulo} 
       /> 

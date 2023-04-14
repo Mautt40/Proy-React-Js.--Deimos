@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   background-color: rgb(62, 24, 24);
   align-items: center;
-  padding-top: 40px;
+  padding-top: 10px;
   row-gap:50px;
   flex-direction:row;
 
@@ -18,7 +18,4 @@
     background-size: contain;
     }
 
-    .MuiCardContent-root css-46bh2p-MuiCardContent-root {
-    
-
-    }
+   

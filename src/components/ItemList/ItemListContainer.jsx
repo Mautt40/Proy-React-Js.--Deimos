@@ -1,26 +1,38 @@
 import ItemList from "./ItemList";
-import { products } from "../../productMock";
 import { useEffect, useState } from "react";
-import { getMenuItemUnstyledUtilityClass } from "@mui/base";
+import axios from "axios"
 
 const ItemListContainer = () => {
 
 const [items, setItems] = useState ([])
 
-useEffect (()=>{const tarea = new Promise ((resolve, reject)=> {
+useEffect (()=> {
 
-  resolve (products)
-  //reject ("se rechazó")
-  
-  })
-  
-  tarea
-  .then  ((res)=>setItems (res))
-  .catch ((err)=>console.log("catch :", err))}, []);
+let data = axios.get ("http://localhost:5000/products")
+data.then (res => setItems(res.data))
+
+ }, []);
+
+const deleteProduct = (id)=>{
+
+}
+
+const updateProduct = (id, data)=>{
+
+
+}
+
+const createProduct = (data)=> {
+
+}
 
 return (
    <div>
-  <ItemList items ={items}/>
+  <ItemList 
+  items={items}
+  deleteProduct={deleteProduct}
+  updateProduct={updateProduct}
+  />
    </div>
   );
 };

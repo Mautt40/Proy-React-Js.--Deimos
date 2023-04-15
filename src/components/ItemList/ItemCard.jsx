@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 const ItemCard = ({ item, deleteProduct,updateProduct }) => {
   return (
     <div classname="containerItems">
-         <Card sx={{ minWidth: 300, margin: 0.2, }}>
+         <Card sx={{ minWidth: 300, margin: 0.2,}}>
             <CardMedia
               sx={{ height: 250, margin: 1, backgroundSize: "contain" }}
               image={item.img}
@@ -38,8 +38,8 @@ const ItemCard = ({ item, deleteProduct,updateProduct }) => {
               <Button variant="contained" id="detalle" color="warning">
                 Ver detalle
               </Button>
-              <Button >EDITAR</Button>
-              <Button variant="contained" onclick={() => deleteProduct(item.id)}>BORRAR</Button>
+              <Button onClick={() => updateProduct(item.id,{genero :"me modifiqué"})}>EDITAR</Button>
+              <Button onClick={() => deleteProduct(item.id)}>BORRAR</Button>
             </CardActions>
           </Card>
       

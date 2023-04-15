@@ -9,7 +9,6 @@
       "genero": "Ciencia Ficción",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188593/Librer%C3%ADa%20Deimos/juramentada_gqedrq.jpg"
     },
-
     {
       "id": 2,
       "titulo": "El hombre ilustrado",
@@ -19,7 +18,6 @@
       "genero": "Ciencia Ficción",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188839/Librer%C3%ADa%20Deimos/el_hombre_ilustrado_ibe2yj.jpg"
     },
-
     {
       "id": 3,
       "titulo": "IT",
@@ -35,7 +33,7 @@
       "precio": 7.2,
       "stock": 2,
       "autor": "Neil Gaiman",
-      "genero": "Ciencia Ficción",
+      "genero": " Ciencia Ficción ",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681475742/Librer%C3%ADa%20Deimos/91EEZgG0xKL._AC_UF350_350_QL50__cz9rm3.jpg"
     },
     {

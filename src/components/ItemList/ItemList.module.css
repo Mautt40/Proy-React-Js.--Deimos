@@ -2,11 +2,13 @@
   display:flex ;
   justify-Content: space-evenly;
   flex-wrap: wrap;
-  background-color: rgb(62, 24, 24);
   align-items: center;
   padding-top: 25px;
   row-gap:50px;
   flex-direction:row;
+  background-image: url(https://res.cloudinary.com/dybaqgqte/image/upload/v1681094974/Librer%C3%ADa%20Deimos/backg_nb2xnb.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 
   
  

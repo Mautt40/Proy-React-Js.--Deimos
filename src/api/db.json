@@ -9,6 +9,7 @@
       "genero": "Ciencia Ficción",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188593/Librer%C3%ADa%20Deimos/juramentada_gqedrq.jpg"
     },
+
     {
       "id": 2,
       "titulo": "El hombre ilustrado",
@@ -18,16 +19,16 @@
       "genero": "Ciencia Ficción",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188839/Librer%C3%ADa%20Deimos/el_hombre_ilustrado_ibe2yj.jpg"
     },
+
     {
       "id": 3,
       "titulo": "IT",
-      "precio": 8.0,
+      "precio": 8,
       "stock": 7,
       "autor": "Stephen King",
       "genero": "Terror",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188628/Librer%C3%ADa%20Deimos/D_NQ_NP_712099-MLA44456783690_122020-O_re6kwb.jpg"
     },
-
     {
       "id": 4,
       "titulo": "Humo y espejos",
@@ -37,7 +38,6 @@
       "genero": "Ciencia Ficción",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188636/Librer%C3%ADa%20Deimos/humo_y_espekods_j2qnrh.jpg"
     },
-
     {
       "id": 5,
       "titulo": "Crónicas Marcianas",
@@ -65,7 +65,6 @@
       "genero": "Ciencia Ficción",
       "img": "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188622/Librer%C3%ADa%20Deimos/hyperion-los-cantos-de-hyperion-1_rllgyl.jpg"
     },
-
     {
       "id": 8,
       "titulo": "Cuentos de hadas",

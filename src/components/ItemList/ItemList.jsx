@@ -1,17 +1,11 @@
-
+import styles from "./ItemList.module.css";
 import ItemCard from "./ItemCard";
 
 const ItemList = ({ items, deleteProduct, updateProduct }) => {
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "space-evenly",
-        flexWrap: "wrap",
-        minHeight: "90vh",
-        padding: "40px",
-      }}
-    >
+      className={styles.containerItems}>
+    
       {items.map((item) => {
         return (
           <ItemCard

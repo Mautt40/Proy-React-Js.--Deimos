@@ -10,8 +10,8 @@ import Typography from "@mui/material/Typography";
 
 const ItemCard = ({ item, deleteProduct,updateProduct }) => {
   return (
-    <div>
-         <Card sx={{ minWidth: 300, margin: 0.2, backgroundColor: "primary" }}>
+    <div classname="containerItems">
+         <Card sx={{ minWidth: 300, margin: 0.2, }}>
             <CardMedia
               sx={{ height: 250, margin: 1, backgroundSize: "contain" }}
               image={item.img}
@@ -45,6 +45,7 @@ const ItemCard = ({ item, deleteProduct,updateProduct }) => {
       
     </div>
   );
+
 };
 
 export default ItemCard

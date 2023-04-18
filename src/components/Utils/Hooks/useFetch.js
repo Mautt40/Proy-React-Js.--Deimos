@@ -6,7 +6,7 @@ const useFetch = (endpoint, initial) => {
   const [data, setData] = useState(initial);
 
   useEffect(() => {
-    let getdata = axios.get(endpoint);
+    let getData = axios.get(endpoint);
     getData.then((res) => setData(res.data))
     .catch((err) => console.log(err));
   }, [endpoint]);

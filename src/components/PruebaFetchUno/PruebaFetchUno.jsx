@@ -1,16 +1,24 @@
 import React from 'react'
-import useFetch from '../Utils/useFetch'
+import useFetch from '../Utils/Hooks/useFetch'
 
 const PruebaFetchUno = () => {
- //aca usamos nuestro customhook//
 
 const {data} = useFetch("https://jsonplaceholder.typicode.com/users",[])
-console.log (data);
+
+console.log (data)
 
 
 
   return (
-    <div>PruebaFetchUno</div>
+    <div>
+      {
+
+      data?.map ( user => <h4 key={user.id}>{user.name}</h4> )
+
+      }
+
+      <h2>acá finaliza el componente 1 ----------</h2>
+    </div>
   )
 }
 

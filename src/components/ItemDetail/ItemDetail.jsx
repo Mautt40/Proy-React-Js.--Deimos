@@ -1,13 +1,12 @@
 import React from "react";
-import { products } from "../../productMock";
-const ItemDetail = () => {
+
+
+export const ItemDetail = ({product}) => {
   return (
     <div>
-      ItemDetail
-      <h2>{products.title}</h2>
-      <h2>{products.description}</h2>
-    </div>
+      <h2>{product.titulo}
+     </h2></div>
   );
 };
 
-export default ItemDetail;
+

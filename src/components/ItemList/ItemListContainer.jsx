@@ -10,12 +10,14 @@ const ItemListContainer = () => {
   console.log(categoryName);
 
   useEffect(() => {
-    const productsFiltered = products.filter(
-      (prod) => prod.category === categoryName
+    const Filtrado = products.filter(
+      (prod) => {
+        return prod.category === categoryName;
+      }
     );
 
     const tarea = new Promise((resolve, reject) => {
-      resolve(categoryName ? productsFiltered : products);
+      resolve(categoryName ? Filtrado : products);
     });
 
     tarea.then((res) => setItems(res)).catch((error) => console.log(error));

@@ -2,9 +2,11 @@ import styles from "./Navbar.module.css";
 import CartWidget from "../CartWidget/CartWidget";
 import Logo from "../../assets/img/Logo.png";
 import BasicTextFields from "../Fieldset/Fieldset";
+import {Outlet} from "react-router-dom"
 
 export const Navbar = () => {
   return (
+   <div>
     <div className={styles.containerNavbar}>
       <div>
         <img src={Logo} alt="logo deimos" />
@@ -22,5 +24,7 @@ export const Navbar = () => {
 
       <CartWidget />
     </div>
+      <Outlet/>
+    </div> 
   );
 };

@@ -36,7 +36,7 @@ export const products = [
         stock: 2,
         autor: "Neil Gaiman",
         genero: "Ciencia Ficción",
-        img: "https://res.cloudinary.com/dybaqgqte/image/upload/v1681188636/Librer%C3%ADa%20Deimos/humo_y_espekods_j2qnrh.jpg"
+        img: "https://res.cloudinary.com/dybaqgqte/image/upload/v1681475742/Librer%C3%ADa%20Deimos/91EEZgG0xKL._AC_UF350_350_QL50__cz9rm3.jpg"
         },
         
         {

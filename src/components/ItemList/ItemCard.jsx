@@ -1,5 +1,3 @@
-
-import styles from "./ItemList.module.css";
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -8,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
-const ItemCard = ({ item, deleteProduct,updateProduct }) => {
+const ItemCard = ({item}) => {
   return (
     <div classname="containerItems">
          <Card sx={{ minWidth: 300, margin: 0.2,}}>
@@ -31,15 +29,15 @@ const ItemCard = ({ item, deleteProduct,updateProduct }) => {
             <CardActions
               style={{
                 justifyContent: "center",
-                paddingBottom: 16,
+                paddingBottom: 25,
+                paddingTop: 10,
                 flexDirection: "column",
               }}
             >
               <Button variant="contained" id="detalle" color="warning">
                 Ver detalle
               </Button>
-              <Button onClick={() => updateProduct(item.id,{genero :"me modifiqué"})}>EDITAR</Button>
-              <Button onClick={() => deleteProduct(item.id)}>BORRAR</Button>
+             
             </CardActions>
           </Card>
       

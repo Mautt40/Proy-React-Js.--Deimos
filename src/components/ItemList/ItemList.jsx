@@ -1,7 +1,7 @@
 import styles from "./ItemList.module.css";
 import ItemCard from "./ItemCard";
 
-const ItemList = ({ items, deleteProduct, updateProduct }) => {
+const ItemList = ({items}) => {
   return (
     <div
       className={styles.containerItems}>
@@ -11,8 +11,7 @@ const ItemList = ({ items, deleteProduct, updateProduct }) => {
           <ItemCard
             item={item}
             key={item.id}
-            deleteProduct={deleteProduct}
-            updateProduct={updateProduct}
+          
           />
         );
       })}

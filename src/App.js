@@ -1,17 +1,34 @@
 import "./App.css";
+import ItemDetailContainer from "./components/ItemDetail/ItemDetailContainer";
 import ItemListContainer from "./components/ItemList/ItemListContainer";
-import { Navbar } from "./components/Navbar/Navbar";
-import  {products} from "./productMock";
-
-
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import {Navbar} from "./components/Navbar/Navbar";
 
 function App() {
+  
+
+  
   return (
-    <div className="App">
-      <Navbar />
-      <ItemListContainer />
+
+<BrowserRouter>
+   <Routes>
       
-    </div>
+    <Route element ={<Navbar/>}>
+       
+       <Route path="/" element={<ItemListContainer/>}/>
+       <Route path="/itemDetail" element={<ItemDetailContainer/>}/>
+       <Route path="*" element={<h1> error 404 cagate </h1>} />
+    
+    </Route>
+    
+    </Routes>
+
+
+
+</BrowserRouter>
+
+
+  
   );
 }
 

@@ -1,0 +1,20 @@
+.contaninerError {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dybaqgqte/image/upload/v1682268660/Librer%C3%ADa%20Deimos/404_error_vbxeiv.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 48px;
+}
+
+h4 {
+  color: black;
+  margin-left: 50px;
+  margin-top: 0%;
+  padding-top: 50px;
+}

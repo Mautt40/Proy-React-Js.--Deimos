@@ -1,0 +1,38 @@
+.containerDetail{
+
+    display: flex;
+    flex-direction: row;
+    background-image: url(https://res.cloudinary.com/dybaqgqte/image/upload/v1681094974/Librer%C3%ADa%20Deimos/backg_nb2xnb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  
+}
+
+.containerDetail img {
+    margin-top: 25px;
+    width: 400px;
+    height:600px;
+}
+
+
+#detalle {
+
+}
+
+h2,h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+h5 {
+    color: bisque;
+    margin:80px;
+    font-size: 16px;   
+}
+
+h6{
+    font-size:16px;
+    color:rgb(180, 165, 195);
+    text-align: center;
+
+}

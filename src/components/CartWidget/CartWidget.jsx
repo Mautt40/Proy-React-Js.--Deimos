@@ -3,6 +3,7 @@ import { BsCart } from "react-icons/bs";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
 import styles from "./CartWidget.module.css";
+import { Link } from "react-router-dom"
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -15,11 +16,16 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const CartWidget = () => {
   return (
-    <div className={styles.carrito}>
-      <StyledBadge badgeContent={1} color="error">
-        <BsCart size={40} style={{ fill: 'white' }}/>
-      </StyledBadge>
-    </div>
+    <Link to ="/cart">
+  
+      <div className={styles.carrito}>
+        <StyledBadge badgeContent={1} color="warning">
+          <BsCart size={40} style={{ fill: "white" }} />
+        </StyledBadge>
+      </div>
+    
+    </Link>
+
   );
 };
 

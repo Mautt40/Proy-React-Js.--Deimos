@@ -10,8 +10,8 @@
 
 .containerDetail img {
     margin-top: 25px;
-    width: 400px;
-    height:600px;
+    width: 350px;
+    height:500px;
 }
 
 
@@ -25,9 +25,13 @@ h2,h3 {
 }
 
 h5 {
+    display: flex;
     color: bisque;
     margin:80px;
-    font-size: 16px;   
+    margin-top: 30px;
+    font-size: 16px; 
+    justify-content: space-around;
+   
 }
 
 h6{

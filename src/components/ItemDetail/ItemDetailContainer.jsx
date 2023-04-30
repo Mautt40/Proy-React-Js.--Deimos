@@ -13,9 +13,14 @@ export const ItemDetailContainer = () => {
     setProduct(encontrado);
   }, [id]);
   
+  const onAdd = (cantidad)=>{
+    console.log(`se agregaron al carrito ${cantidad} unidades`)
+  }
+
+
   return (
     <div>
-      <ItemDetail product={product} />;
+      <ItemDetail product={product} onAdd={onAdd}/>;
     </div>
   );
 };

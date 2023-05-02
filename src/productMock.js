@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     titulo: "Elantris",
-    precio: "$8.200,00",
+    precio: "8200",
     stock: 3,
     autor: "Brandon Sanderson",
     genero: "Fantasía",
@@ -15,7 +15,7 @@ export const products = [
   {
     id: 2,
     titulo: "El Nombre del viento",
-    precio: "$9.000,00",
+    precio: "9000",
     stock: 3,
     autor: "Patrick Rothfuss",
     genero: "Fantasía",
@@ -29,7 +29,7 @@ export const products = [
   {
     id: 3,
     titulo: "IT",
-    precio: "$8.000,00",
+    precio: "8000",
     stock: 7,
     autor: "Stephen King",
     genero: "Terror",
@@ -43,7 +43,7 @@ export const products = [
   {
     id: 4,
     titulo: "Humo y espejos",
-    precio: "$7.200,00",
+    precio: "7200",
     stock: 2,
     autor: "Neil Gaiman",
     genero: "Fantasía",
@@ -56,7 +56,7 @@ export const products = [
   {
     id: 5,
     titulo: "Crónicas Marcianas",
-    precio: "$5.700,00",
+    precio: "5700",
     stock: 5,
     autor: "Ray Bradbury",
     genero: "Ciencia Ficción",
@@ -68,7 +68,7 @@ export const products = [
   {
     id: 6,
     titulo: "Dune /Saga completa",
-    precio: "$23.500,00",
+    precio: "23500",
     stock: 2,
     autor: "Frank Herbert",
     genero: "Ciencia Ficción",
@@ -80,7 +80,7 @@ export const products = [
   {
     id: 7,
     titulo: "Hyperion",
-    precio: "$6.500,00",
+    precio: "6500",
     stock: 4,
     autor: "Dan Simmons",
     genero: "Ciencia Ficción",
@@ -93,7 +93,7 @@ export const products = [
   {
     id: 8,
     titulo: "Cuentos de hadas",
-    precio: "$6.200,00",
+    precio: "6200",
     stock: 9,
     autor: "Stephen King",
     genero: "Terror",
@@ -105,7 +105,7 @@ export const products = [
   {
     id: 9,
     titulo: "Libros de sangre VOL.1",
-    precio: "$7.200,00",
+    precio: "7200",
     stock: 3,
     autor: "Clive Barker",
     genero: "Terror",
@@ -117,7 +117,7 @@ export const products = [
   {
     id: 10,
     titulo: "Juramentada",
-    precio: "$13.500,00",
+    precio: "13500",
     stock: 2,
     autor: "Brandon Sanderson",
     genero: "Fantasía",
@@ -130,7 +130,7 @@ export const products = [
   {
     id: 11,
     titulo: "El señor de los anillos",
-    precio: "$17.800,00",
+    precio: "17800",
     stock: 3,
     autor: "J.R.Tolkien",
     genero: "Fantasía",
@@ -143,7 +143,7 @@ export const products = [
   {
     id: 12,
     titulo: "Mistborn Saga",
-    precio: "$22.000,00",
+    precio: "22000",
     stock: 3,
     autor: "Brandon Sanderson",
     genero: "Fantasía",
@@ -156,7 +156,7 @@ export const products = [
   {
     id: 13,
     titulo: "Material Sensible",
-    precio: "$7.850,00",
+    precio: "7850",
     stock: 3,
     autor: "Neil Gaiman",
     genero: "Fantasía",
@@ -168,7 +168,7 @@ export const products = [
   {
     id: 14,
     titulo: "H.P.Lovecraft-Colección",
-    precio: "$21.200,00",
+    precio: "21200",
     stock: 3,
     autor: "H.P. Lovecraft",
     genero: "Terror",
@@ -181,7 +181,7 @@ export const products = [
   {
     id: 15,
     titulo: "El hombre ilustrado",
-    precio: "$6.400,00",
+    precio: "6400",
     stock: 4,
     autor: "Ray Bradbury",
     genero: "Ciencia Ficción",

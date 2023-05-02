@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import { Button } from "@mui/material";
 import CounterContainer from "../Counter/CounterContainer";
 
-export const ItemDetail = ({ product, onAdd }) => {
+export const ItemDetail = ({ product, onAdd, cantidadTotal}) => {
   return (
     <div className={Style.containerDetail}>
       <div>
@@ -24,7 +24,7 @@ export const ItemDetail = ({ product, onAdd }) => {
       </div>
 
 
-      <CounterContainer stock={product.stock} onAdd={onAdd}/>
+      <CounterContainer stock={product.stock} onAdd={onAdd} initial={cantidadTotal}/>
 
      
    

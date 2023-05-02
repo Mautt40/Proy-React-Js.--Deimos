@@ -9,7 +9,7 @@ import {Link} from "react-router-dom"
 
 const ItemCard = ({item}) => {
   return (
-    <div classname="containerItems">
+    <div className="containerItems">
          <Card sx={{ minWidth: 300, margin: 0.2,}}>
             <CardMedia
               sx={{ height: 250, margin: 2, backgroundSize: "contain" }}
@@ -21,7 +21,7 @@ const ItemCard = ({item}) => {
                 {item.titulo}
               </Typography>
               <Typography gutterBottom variant="h5" component="div"style={{ textAlign: 'center' }} >
-                {item.precio}
+                $ {item.precio},00
               </Typography>
               <Typography variant="h6" color="error" style={{ textAlign: 'center' }}>
                 {item.autor}

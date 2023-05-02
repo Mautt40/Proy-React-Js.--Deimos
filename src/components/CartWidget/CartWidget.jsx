@@ -1,11 +1,15 @@
 import "./CartWidget.module.css";
-import { BsCart } from "react-icons/bs";
+import { BsCart4 } from "react-icons/bs";
 import Badge from "@mui/material/Badge";
 import { styled } from "@mui/material/styles";
-import styles from "./CartWidget.module.css";
 import { Link } from "react-router-dom"
+import { useContext } from "react";
+import { CartContext } from "../../Context/CartContext";
+import Cart from "../Carrito/Cart";
 
-const StyledBadge = styled(Badge)(({ theme }) => ({
+
+
+const StyledBadge = styled(Badge)(({theme}) => ({
   "& .MuiBadge-badge": {
     right: -3,
     top: 13,
@@ -15,12 +19,15 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const CartWidget = () => {
+  
+const {cart} = useContext(CartContext)
+  
   return (
     <Link to ="/cart">
   
-      <div className={styles.carrito}>
-        <StyledBadge badgeContent={1} color="warning">
-          <BsCart size={40} style={{ fill: "white" }} />
+      <div>
+        <StyledBadge badgeContent={cart.length} color="warning">
+          <BsCart4 size={40} style={{fill: "white" }} />
         </StyledBadge>
       </div>
     

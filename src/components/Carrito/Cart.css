@@ -1,0 +1,89 @@
+
+.cart-container{
+    width: 100%;
+    /*padding: 25px 0;*/
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-image: url(https://res.cloudinary.com/dybaqgqte/image/upload/v1682988211/Librer%C3%ADa%20Deimos/background2_j3y4gd.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.container-items{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0 40px;
+}
+
+.cart-info{
+    
+    margin-top: 0%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #fefeff;
+    background-color: rgba(0, 0, 0, 0.22);
+}
+.btn-cart{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn-cart > button {
+    width: 200px;
+}
+
+.cart-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 10px;
+
+}
+
+.item-quantity{
+    margin-top: 0%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #fefeff;  
+}
+
+.cart-item > img{
+    width: 20%;
+    height: 150px;
+    object-fit: contain;
+    margin-right: 10px;
+
+}
+
+/* Aca la tarjeta */
+.cart-item-info{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fefdff;
+    
+    
+}
+
+.cart-item-info > h2{
+    font-family: monospace;
+}

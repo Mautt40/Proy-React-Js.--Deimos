@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
-import {Button} from "@mui/material"
-
+import { Button } from "@mui/material";
 
 const CounterPresentation = ({ sumar, restar, counter, onAdd }) => {
   return (
@@ -15,29 +14,21 @@ const CounterPresentation = ({ sumar, restar, counter, onAdd }) => {
           justifyContent: "center",
         }}
       >
-        <Box 
-        mt={5} 
-        sx={{ justifyContent: "center" }}
-        mb={5}>
+        <Box mt={5} sx={{ justifyContent: "center" }} mb={5}>
           <Button
             variant="contained"
             color="warning"
-            onClick={() => onAdd(counter)}
-          >
-            Agregar al carrito
-          </Button>
+            onClick={() => onAdd(counter)}> Agregar al carrito </Button>
         </Box>
       </div>
 
       <Button variant="outlined" color="warning" onClick={sumar}>
         Sumar
       </Button>
-      <h2>{counter}  *</h2>
+      <h2>{counter} *</h2>
       <Button variant="outlined" color="warning" onClick={restar}>
         Restar
       </Button>
-        
-    
 
       <Box mt={18}>
         <Link to="/">

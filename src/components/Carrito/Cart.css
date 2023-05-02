@@ -1,14 +1,15 @@
 
 .cart-container{
     width: 100%;
-    /*padding: 25px 0;*/
+    padding-top: 15px;
     min-height: 90vh;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items:flex-start;
     background-image: url(https://res.cloudinary.com/dybaqgqte/image/upload/v1682988211/Librer%C3%ADa%20Deimos/background2_j3y4gd.jpg);
     background-attachment: fixed;
     background-size: cover;
+    margin-bottom: 10px;
 
 }
 
@@ -19,25 +20,65 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 0 40px;
+    gap: 40px;
+    padding-left: 10px;
 }
 
+.container-items h1 {
+    color: rgb(255, 230, 0);
+    background-color: rgb(84, 19, 19);
+    padding: 15px;
+    border-radius: 25px;
+    align-content: center;
+    font-family: serif;
+    font-size: 26px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0%;
+
+}
 .cart-info{
     
-    margin-top: 0%;
+   
     width: 35%;
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    align-items: baseline;
     justify-content: space-evenly;
     color: #fefeff;
     background-color: rgba(0, 0, 0, 0.22);
+    margin-right: 25px;
 }
+.cart-info img {
+    width: 250px;
+    min-height: 250px;
+    margin-bottom: 50px;
+}
+.cart-info h3 {
+    margin-bottom: 50px;
+}
+
+.cart-info h6 {
+
+    color:black;
+    font-size: 26px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    margin-left: 5%;
+    padding-top: 25px;
+   
+
+}
+
 .btn-cart{
     display: flex;
     width: 100%;
     gap: 20px;
-    justify-content: center;
+    justify-content:baseline;
+    margin-left: 15px;
 }
 
 .btn-cart > button {
@@ -51,7 +92,7 @@
     height: 150px;
     align-items: center;
     border-radius: 10px;
-    padding: 0 10px;
+   
 
 }
 

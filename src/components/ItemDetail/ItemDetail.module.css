@@ -1,5 +1,7 @@
 .containerDetail{
 
+    width: 100%;
+    min-height: 90vh;
     display: flex;
     flex-direction: row;
     background-image: url(https://res.cloudinary.com/dybaqgqte/image/upload/v1681094974/Librer%C3%ADa%20Deimos/backg_nb2xnb.jpg);

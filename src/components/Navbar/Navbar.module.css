@@ -7,6 +7,7 @@ align-items: center;
 background: rgb(29,0,0);
 background-image: url("https://res.cloudinary.com/dybaqgqte/image/upload/v1681094974/Librer%C3%ADa%20Deimos/backg_nb2xnb.jpg");
 background-size: cover;
+position:relative;
 
 }
 img {

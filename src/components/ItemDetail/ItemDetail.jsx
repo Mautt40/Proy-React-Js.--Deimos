@@ -4,6 +4,8 @@ import {Link} from "react-router-dom"
 import { Button } from "@mui/material";
 import CounterContainer from "../Counter/CounterContainer";
 
+
+
 export const ItemDetail = ({ product, onAdd, cantidadTotal}) => {
   return (
     <div className={Style.containerDetail}>

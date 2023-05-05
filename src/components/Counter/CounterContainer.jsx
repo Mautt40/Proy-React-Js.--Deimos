@@ -3,6 +3,8 @@ import CounterPresentation from "./CounterPresentacion";
 
 const CounterContainer = ({ stock, onAdd, initial=1 }) => {
   const [counter, setCounter] = useState(initial);
+
+
   
 useEffect (()=>{
   setCounter (initial)

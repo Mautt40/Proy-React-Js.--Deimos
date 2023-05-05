@@ -25,7 +25,7 @@ const {cart} = useContext(CartContext)
   return (
     <Link to ="/cart">
   
-      <div>
+      <div className="carrito">
         <StyledBadge badgeContent={cart.length} color="warning">
           <BsCart4 size={40} style={{fill: "white" }} />
         </StyledBadge>

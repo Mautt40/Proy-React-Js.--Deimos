@@ -1,8 +1,12 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import {ItemDetail} from "./ItemDetail";
-import {products} from "../../productMock";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
+import { database } from "../../firebaseConfig";
+import {getDoc, collection, doc} from "firebase/firestore"
+import Swal from "sweetalert2";
+
+
 
 export const ItemDetailContainer = () => {
   const [product, setProduct] = useState({});
@@ -12,8 +16,18 @@ export const ItemDetailContainer = () => {
   const {id} = useParams();
   
   useEffect(() => {
-    let encontrado = products.find((prod) => prod.id === +id);
-    setProduct(encontrado);
+const itemCollection = collection (database, "products")
+const refDoc = doc(itemCollection, id)
+
+getDoc (refDoc).then(res => setProduct({
+...res.data(),
+id:res.id,
+
+}))
+
+.catch(err=> console.log(err))
+
+
   }, [id]);
   
   const onAdd = (cantidad)=>{
@@ -23,6 +37,13 @@ export const ItemDetailContainer = () => {
     }
     
      agregarAlCarrito (data)
+     Swal.fire({
+      position: 'top-center',
+      icon: 'success',
+      title: `${product.titulo}  Agregado al carrito`,
+      showConfirmButton: false,
+      timer: 1500
+    })
 
   }
   

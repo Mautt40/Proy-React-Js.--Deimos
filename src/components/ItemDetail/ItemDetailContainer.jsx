@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
 import { database } from "../../firebaseConfig";
 import {getDoc, collection, doc} from "firebase/firestore"
-import Swal from "sweetalert2";
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 
 
@@ -40,7 +40,9 @@ id:res.id,
      Swal.fire({
       position: 'top-center',
       icon: 'success',
-      title: `${product.titulo}  Agregado al carrito`,
+      color: "#8d0000",
+      background:"#fff8c1",
+      title: `"${product.titulo}" Agregado al carrito`,
       showConfirmButton: false,
       timer: 1500
     })

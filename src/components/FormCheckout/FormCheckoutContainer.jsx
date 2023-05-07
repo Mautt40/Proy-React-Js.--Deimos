@@ -1,48 +1,46 @@
 import React from "react";
 import FormCheckout from "./FormCheckout"
 import { useFormik } from "formik";
-import * as Yup from "yup";
+import * as Yup from "yup" 
+
 
 export const FormCheckoutContainer = () => {
-  const { handleSubmit, handleChange, errors, values } = useFormik({
+  const { handleSubmit, handleChange, errors, } = useFormik({
     initialValues: {
       nombre: "",
       email: "",
       password: "",
-      confirmPassword: "",
+      confirmPassword:""
+      
     },
     onSubmit: (data) => {
       console.log(data);
     },
+
     validationSchema: Yup.object().shape({
-      nombre: Yup.string()
-        .required("este campo es obligatorio")
-        .min(3, "el nombre debe tener al menos 3 caracteres")
-        .max(10, "el nombre no puede superar los 10 caracteres"),
-      email: Yup.string()
-        .email("El campo debe ser un email")
-        .required("este campo es obligatorio"),
-      password: Yup.string()
-        .required("este campo es obligatorio")
-        .matches(/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,15}$/, {
-          message:
-            "la contraseña debe tener 1 mayuscula 1 minuscula 1 caracter especial y un numero",
-        }),
-      confirmPassword: Yup.string()
-        .required("este campo es obligatorio")
-        .oneOf([Yup.ref("password")], "las contraseñas no coinciden"),
+      nombre: Yup.string().required("Este campo es obligatorio"). min( 5 , "El nombre debe poseer al menos 5 caracteres").max(12, "El nombre no puede superar los 12 caeacteres"),
+      email:  Yup.string().email("El campo debe ser un email válido").required("Este campo es obligatorio"),
+      password:  Yup.string().required("Este campo es obligatorio").matches(/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,15}$/, {message:"La contraseña debe poseer al menos letra una minúscula, una mayúscula, un caractér especial y un número"}),
+      confirmPassword: Yup.string().required("Este campo es obligatorio").oneOf([Yup.ref ("password")],"Las contraseñas no coinciden")     
     }),
-    validateOnChange: false,
-  });
+
+    validateOnChange: false
+
+
+
+    });
+    
+
 
   // /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,15}$/
   return (
     <div>
       <FormCheckout
-        errors={errors}
+        
         handleChange={handleChange}
         handleSubmit={handleSubmit}
-        values={values}
+        errors={errors}
+    
       />
     </div>
   );

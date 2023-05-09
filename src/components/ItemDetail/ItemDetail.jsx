@@ -1,7 +1,5 @@
 import React from "react";
 import Style from "./ItemDetail.module.css";
-import {Link} from "react-router-dom"
-import { Button } from "@mui/material";
 import CounterContainer from "../Counter/CounterContainer";
 
 
@@ -20,13 +18,18 @@ export const ItemDetail = ({ product, onAdd, cantidadTotal}) => {
         <h5> {product.sinopsis} </h5>
         <h6> Stock: {product.stock}</h6> 
    
-     
+       
     
        
       </div>
+      
+{
 
+product.stock > 0 ? <CounterContainer stock={product.stock} onAdd={onAdd} initial={cantidadTotal}/>:
+<div className={Style.sinStock}><h4>Sin Stock</h4></div>
 
-      <CounterContainer stock={product.stock} onAdd={onAdd} initial={cantidadTotal}/>
+}
+      
 
      
    

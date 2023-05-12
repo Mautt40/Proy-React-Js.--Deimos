@@ -1,7 +1,6 @@
 import styles from "./Navbar.module.css";
 import CartWidget from "../CartWidget/CartWidget";
 import Logo from "../../assets/img/Logo.png";
-import BasicTextFields from "../Fieldset/Fieldset";
 import { Outlet,Link,useNavigate } from "react-router-dom";
 
 
@@ -27,9 +26,7 @@ const navigate = useNavigate()
         
         </div>
 
-        <div className="filtro">
-          <BasicTextFields id="texto" />
-        </div>
+      
 
         <CartWidget />
       </div>

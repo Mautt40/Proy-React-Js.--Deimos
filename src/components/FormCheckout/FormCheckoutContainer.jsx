@@ -5,6 +5,15 @@ import * as Yup from "yup"
 import { CartContext } from "../../Context/CartContext";
 import { database } from "../../firebaseConfig";
 import { addDoc,collection , serverTimestamp, updateDoc, doc } from "firebase/firestore";
+import Backdrop from '@mui/material/Backdrop';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import style from "./FormChekout.module.css" 
+
+
 
 export const FormCheckoutContainer = () => {
 
@@ -58,27 +67,59 @@ console.log(orderId)
 
     validateOnChange: false
 
-
-
     });
     
-
-
-  // /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,15}$/
-  return (
-    <div>
-{orderId ? (<h1>{orderId}</h1>) : (
-
-<FormCheckout
-        
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-        errors={errors}
+    const style = {
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      width: 400,
+      bgcolor: 'background.paper',
+      border: '2px solid #000',
+      boxShadow: 24,
+      p: 4,
+    };
     
-      />
-
-    )}  
-    </div>
   
-);
+      const [open, setOpen] = React.useState(false);
+      const handleOpen = () => setOpen(true);
+      const handleClose = () => setOpen(false);
+
+
+  return orderId ? (
+    <div>
+      <Button onClick={handleOpen} variant="contained" color="warning">Ver ticket</Button>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={open}
+        
+        onClose={handleClose}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+      >
+        <Fade in={open}>
+          <Box sx={style}>
+            <Typography id="transition-modal-title" variant="h6" component="h2">
+            </Typography>
+             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+             ¡MUCHAS GRACIAS POR SU COMPRA!------------------
+             Su código de compra es // {orderId} //. Conserve el ticket ante cualquier eventualidad.
+             </Typography>
+          </Box>
+        </Fade>
+      </Modal>
+    </div>
+  ) : (
+    <FormCheckout 
+    handleChange={handleChange} 
+    handleSubmit={handleSubmit} 
+    errors={errors} />
+  );
 };
+
+export default FormCheckoutContainer

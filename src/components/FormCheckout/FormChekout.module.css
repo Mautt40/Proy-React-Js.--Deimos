@@ -4,3 +4,14 @@
   background-size: cover;
   height: 90vh;
 }
+
+.ticketButton{
+  background-color: #eeff00;
+  color: #050000;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+

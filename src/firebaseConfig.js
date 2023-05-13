@@ -8,12 +8,12 @@ import {getFirestore} from "firebase/firestore"
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDY9L1RKLvtYck5OuatewggGf1B0lSvwo4",
-  authDomain: "e-commerce-deimos--react-js.firebaseapp.com",
-  projectId: "e-commerce-deimos--react-js",
-  storageBucket: "e-commerce-deimos--react-js.appspot.com",
-  messagingSenderId: "522288730748",
-  appId: "1:522288730748:web:39bcefb06e8bf4bbc8aff9"
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain:process.env.REACT_APP_AUTHDOMAIN ,
+  projectId:process.env.REACT_APP_PROJECTID ,
+  storageBucket:process.env.REACT_APP_STORAGEBUCKET ,
+  messagingSenderId:process.env.REACT_APP_MESSAGINGSENDERID ,
+  appId:process.env.REACT_APP_APPID, 
 };
 
 // Initialize Firebase

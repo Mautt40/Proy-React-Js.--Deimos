@@ -12,6 +12,8 @@ _______________________________________________________
 - Sweet alert
 - React-router-dom
 - Rect spinners
+- Yup
+- Formik
 
 
 
@@ -22,7 +24,7 @@ _______________________________________________________
 
 
 
-#####  This proyect has been created with educational an non-commertial purposes.
+#####  This proyect has been created with educational and non-commertial purposes.
 =====================
 
 (Take a look of how does functionality work)

@@ -9,21 +9,25 @@ _______________________________________________________
 _______________________________________________________
 ### To run this code, you will have to install the following libraries:
 - Material ui
-- Sweet alert
+- Sweetalert2
 - React-router-dom
 - Rect spinners
 - Yup
 - Formik
 
 
+#### This is the final proyect of the React Js Course, by Coderhouse. This proyect is based on react using a data base from firebase and firestore. You will find a mockup file with the name "productMock.js" inside, it can be used for simulating the fetch if you dont have a database on your own. The file contains all the object fields required (id, precio, autor, genero, category, sinopsis, img) . 
 
+## Also, to run this project you will have to create a new .env file with these enviroment variables:
 
-#### This is the final proyect of the React Js Course, by Coderhouse. This proyect is based on react using a data base from firebase and firestore. You will find a mockup file with the name "productMock.js" inside, it can be used for simulating the fetch if you dont have a database on your own.
+- REACT_APP_APIKEY=
+- REACT_APP_AUTHDOMAIN=
+- REACT_APP_PROJECTID=
+- REACT_APP_STORAGEBUCKET=
+- REACT_APP_MESSAGINGSENDERID=
+- REACT_APP_APPID=
 
 =====================
-
-
-
 #####  This proyect has been created with educational and non-commertial purposes.
 =====================
 

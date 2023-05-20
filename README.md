@@ -35,3 +35,12 @@ _______________________________________________________
 
 You Tube Site review :
 `<link>` : <https://youtu.be/SiGEhx9689o>
+
+
+(VARIABLES DE ENTORNO): 
+REACT_APP_APIKEY=AIzaSyDY9L1RKLvtYck5OuatewggGf1B0lSvwo4
+REACT_APP_AUTHDOMAIN=e-commerce-deimos--react-js.firebaseapp.com
+REACT_APP_PROJECTID=e-commerce-deimos--react-js
+REACT_APP_STORAGEBUCKET=e-commerce-deimos--react-js.appspot.com
+REACT_APP_MESSAGINGSENDERID=522288730748
+REACT_APP_APPID=1:522288730748:web:39bcefb06e8bf4bbc8aff9
